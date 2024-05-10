@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <div class="descuento">20% de descuento en todos los producos!</div>
+        <div class="titulo">
+            <img src="img/logo 1.svg" alt="">
+            <h1>Nombre Tienda</h1>
+        </div>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Registrarme</a></li>
+                    <li><a href="">Ingresar</a></li>
+                </ul>
+                <a class="menu" href="#"><i class="fi fi-br-menu-burger"></i></a>
+
+            </nav>
+        </section>
+    </header>
+    <main class="main_formulario">
+        <form action="">
+            <div class="form-titulo">
+                <h1>Añadí tu super!</h1>
+                <div class="parrafo">Agregá tu personaje favorito completando las opciones.</div>
+            </div>
+            <div class="form_cuerpo">
+                <div class="form_izquierdo">
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" title="Nombre"placeholder="Nombre" required>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha" title="fecha"placeholder="Fecha" required>
+                    <textarea name="txtTarea" id="txtTarea">Descripcion</textarea>
+                </div>
+                <div class="form_derecho">
+                    <!-- seleccionar especie -->
+                    <label for="especie"></label>
+                    <select name="especie" id="especie">
+                        <option value="none" selected disabled>Elija una opcion</option>
+                        <option value="1">humano</option>
+                        <option value="2">extraterreste</option>
+                    </select>
+                    <!-- agregar foto -->
+                    <label for="foto">Agregar Foto</label>
+                    <input type="file" name="foto" id="foto" title="Foto"placeholder="Foto" required>
+                    <!-- poderes -->
+                    <label for="poderes">Poderes</label>
+                    <label class="lbl-Check" for="volar">
+                      <input type="checkbox" name="poderes" id="volar" value="Volar"> Volar
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="lbl-Check" for="superInteligencia">
+                      <input type="checkbox" name="poderes" id="superInteligencia"value="Super Inteligencia"> Super Inteligencia
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="lbl-Check" for="vista">
+                      <input type="checkbox" name="poderes" id="vista"value="Vista de rayo láser"> Vista de rayo láser
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="lbl-Check" for="billetera">
+                        <input type="checkbox" name="poderes" id="billetera"value="Billetera gorda"> Billetera gorda
+                        <span class="checkmark"></span>
+                    </label>
+                    <hr>
+                    <!-- villano -->
+                    <label for="heroes">Tipo de personaje</label>
+                    <label class="lbl-Check"for="heroes">
+                      <input checked type="radio" name="personaje" id="heroes" value="yes"> Héroe / Heroina
+                      <span class="radiomark"></span>
+                    </label>
+                    <label class="lbl-Check"for="villano">
+                      <input type="radio" name="personaje" id="villano" value="no"> Villano / Villana
+                      <span class="radiomark"></span>
+                    </label>
+                
+                </div>
+            </div>
+            <div class="form-boton">
+                <button type="submit">Añadir</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>Todos los derechos reservados a FRONT END</div>
+    </footer>
+
+</body>
+</html>
+

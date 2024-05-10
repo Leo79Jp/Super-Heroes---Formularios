@@ -1,0 +1,410 @@
+*{
+    margin: 0px;
+}
+/* ----------------- header-------------------- */
+body{
+    font-family: "Inter", sans-serif;
+}
+.titulo{
+    display: flex;
+    background-color: #00669f;
+    color: #f3f3f3;
+}
+.descuento {
+    background-color: #1cd1b0;
+    padding-left: 20px;
+    height: 23px;
+    line-height: 23px;
+}
+header img{
+    margin-left: 10px;
+}
+h1 {
+    margin: 0px;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 20px;
+    color: #f3f3f3;
+}
+
+section>nav{
+    display: flex;
+    justify-content: end;
+    height: 40px;
+    line-height: 40px;
+    background-color: #001D2D;
+}
+nav ul{
+    display: block;
+    list-style: none;
+    margin: 0px;
+}
+nav li{
+    display: inline;
+    margin: 15px; 
+}
+nav a {
+    text-decoration: none;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu{
+    text-decoration: none;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 20px;
+    display: none; 
+    padding-top: 3px;
+}
+nav .menu:last-child{
+    margin-right: 15px;
+}
+
+/* ------------------ main --------------------- */
+.main_principal{min-height: calc(100vh - 143px - 61px);}
+.main_principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_principal>section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: auto;
+}
+
+article {
+    width: 300px;
+    height: 509px;
+    border-top-left-radius: 7%;
+    border-top-right-radius: 7%;
+}
+svg {
+    fill: red;
+    position: relative;
+    top: 30px;
+    left: 15px;
+    align-self: flex-start;
+}
+.fondo {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.superior {
+    position: relative;
+    z-index: 1;
+}
+.avatar {
+    width: 40%;
+    border-radius: 50%;
+    z-index: 2;
+}
+article h2 {
+    margin-bottom: 0px;
+}
+article p {
+    margin: 16px;
+}
+.descripcion {
+    position: relative;
+    top: -60px;
+    background-color: #f3f3f3;
+}
+article button {
+    margin-bottom: 10px;
+    width: 128.48px;
+    height: 48.52px;
+    border: 0px;
+    border-radius: 2px;
+    background-color: #00669f;
+    color: #f3f3f3;
+}
+article>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Btn_mas{
+    width: 82px;
+    height: 82px;
+}
+/* ************** index Formularios *************** */
+.main_formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    
+}
+.form-titulo{
+    max-width: 954px;
+    /* height: 106px; */
+    text-align: center;
+    background-color: #00669F;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap column;
+}
+form h1{
+    height: 72px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FBFFFD;
+    display: flex;
+}
+form .parrafo{
+    /* height: 34px; */
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+
+}
+.form_cuerpo{
+    max-width: 954px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 23px;
+    background-color: #00669F;
+    padding-bottom: 45px;
+
+}
+.form_izquierdo{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex-wrap: wrap;
+    background-color: #00669F;
+    width: 465px;
+    /* height: 150px; */
+}
+.form_derecho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: start;
+    background-color: #00669F;
+    width: 465px;
+    /* height: 150px; */
+
+}
+label[for="nombre"],[for="especie"],[for="fecha"],[for="foto"]{
+    margin-top: 15px;
+    margin-bottom: 8px;
+    height: 24px;
+    color: #FFFFFF;
+    width: 340px;
+}
+label[for="nombre"]::before{
+    content: "* Nombre";
+}
+label[for="especie"]::before{
+    content: "* Especie";
+}
+label[for="poderes"]{
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    color: #FFFFFF;
+}
+label[for="heroes"]{
+    height: 20px;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+#nombre, select,#fecha{
+    height: 63px;
+    width: 340px;
+    border-radius: 15.34px;
+    border: 0px;
+    padding-left: 7px;
+}
+#txtTarea{
+    height: 292px;
+    width: 330px;
+    border-radius: 15.34px;
+    border: 0px;
+    padding-left: 7px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+#foto{
+    width: 340px;
+  color: white;
+  border-radius: 5px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 20px 0px;
+  text-align: center;
+}
+hr{
+    border: 1px solid;
+    width: 100%;
+    color: #CCCCCC;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+}
+
+/* -------- checkbox ---------------------- */
+.lbl-Check {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: #FFFFFF;
+  }
+  .lbl-Check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+    .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  .radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .lbl-Check input:checked ~ .checkmark {
+    background-color: #4DD1FB;
+  }
+  .lbl-Check input:checked ~ .radiomark {
+    background-color: #4DD1FB;
+  }
+
+  .checkmark:after, .radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .lbl-Check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .lbl-Check input:checked ~ .radiomark:after {
+    display: block;
+  }
+
+  .lbl-Check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .lbl-Check .radiomark:after {
+    top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  }
+
+
+.form-boton{
+    max-width: 954px;
+    height: 106px;
+    text-align: center;
+    background-color: #00669F;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.form-boton button {
+    width: 466px;
+    height: 87px;
+    background-color: #1CD1B0;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 23.01px;
+    border: 0px;
+    cursor: pointer;
+    padding: 0px 80px;
+    /* display: flex; */
+}
+/* -------------------- footer ----------------- */
+footer {
+    height: 61px;
+    line-height: 61px;
+    text-align: center;
+    color: #FFF9F9;
+    background-color: #00669f;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    .form-boton button {
+        width: 340px;
+    }
+    /* .form_cuerpo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    } */
+    .form_izquierdo{
+        width: 340px;
+        align-content: center;
+    }
+    .form_derecho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: start;
+        width: 340px;
+    
+    }
+    
+    
+}
+
+
+
+    
+
+
+
+
+
+

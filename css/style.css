@@ -12,26 +12,26 @@ body{
 }
 .descuento {
     background-color: #1cd1b0;
-    padding-left: 20px;
-    height: 23px;
-    line-height: 23px;
+    padding-left: 16px;/*20*/
+    height: 18.4px; /*23*/
+    line-height: 18.4px;
 }
 header img{
-    margin-left: 10px;
+    margin-left: 8px;/*10*/
 }
 h1 {
     margin: 0px;
-    height: 80px;
-    line-height: 80px;
-    padding-left: 20px;
+    height: 64px; /*80*/
+    line-height: 64px;
+    padding-left: 16px;/*20*/
     color: #f3f3f3;
 }
 
 section>nav{
     display: flex;
     justify-content: end;
-    height: 40px;
-    line-height: 40px;
+    height: 32px;/*40*/
+    line-height: 32px;
     background-color: #001D2D;
 }
 nav ul{
@@ -41,20 +41,20 @@ nav ul{
 }
 nav li{
     display: inline;
-    margin: 15px; 
+    margin: 12px; /*15*/
 }
 nav a {
     text-decoration: none;
     box-shadow: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;/*20*/
     cursor: pointer;
 }
 .menu{
     text-decoration: none;
     box-shadow: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;/*20*/
     display: none; 
     padding-top: 3px;
 }
@@ -63,7 +63,7 @@ nav .menu:last-child{
 }
 
 /* ------------------ main --------------------- */
-.main_principal{min-height: calc(100vh - 143px - 61px);}
+.main_principal{min-height: calc(100vh - 124.4px - 48.8px);}
 .main_principal{
     display: flex;
     justify-content: center;
@@ -143,39 +143,40 @@ article>div {
     
 }
 .form-titulo{
-    max-width: 954px;
+    max-width: 715.5px; /*954*/
+
     /* height: 106px; */
     text-align: center;
     background-color: #00669F;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    margin-top: 20px;
+    margin-top: 15px; /*20*/
     display: flex;
     align-items: center;
     flex-flow: wrap column;
 }
 form h1{
-    height: 72px;
-    font-size: 40px;
+    height: 54px; /*72*/ 
+    font-size: 30px;/*40*/
     font-weight: bold;
     color: #FBFFFD;
     display: flex;
 }
 form .parrafo{
     /* height: 34px; */
-    font-size: 20px;
+    font-size: 15px;/*20*/
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 15px;/*20*/
 
 }
 .form_cuerpo{
-    max-width: 954px;
+    max-width: 715.5px; /*954*/
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 23px;
+    gap: 17.25px; /*23*/
     background-color: #00669F;
-    padding-bottom: 45px;
+    padding-bottom: 20px; /*45*/
 
 }
 .form_izquierdo{
@@ -184,7 +185,7 @@ form .parrafo{
     align-items: end;
     flex-wrap: wrap;
     background-color: #00669F;
-    width: 465px;
+    width: 348.75px; /*465*/
     /* height: 150px; */
 }
 .form_derecho{
@@ -193,16 +194,16 @@ form .parrafo{
     align-items: center;
     align-items: start;
     background-color: #00669F;
-    width: 465px;
+    width: 348.75px;
     /* height: 150px; */
 
 }
 label[for="nombre"],[for="especie"],[for="fecha"],[for="foto"]{
-    margin-top: 15px;
-    margin-bottom: 8px;
-    height: 24px;
+    margin-top: 11.25px; /*15*/
+    margin-bottom: 6px; /*8*/
+    height: 18px; /*24*/
     color: #FFFFFF;
-    width: 340px;
+    width: 255px; /*340*/
 }
 label[for="nombre"]::before{
     content: "* Nombre";
@@ -211,49 +212,49 @@ label[for="especie"]::before{
     content: "* Especie";
 }
 label[for="poderes"]{
-    height: 20px;
-    margin-top: 20px;
-    margin-bottom: 13px;
+    height: 15px;/*20*/
+    margin-top: 15px;
+    margin-bottom: 9.75px;/*13*/
     color: #FFFFFF;
 }
 label[for="heroes"]{
-    height: 20px;
-    margin-top: 20px;
+    height: 15px;/*20*/
+    margin-top: 15px;
     color: #FFFFFF;
 }
 
 #nombre, select,#fecha{
-    height: 63px;
-    width: 340px;
+    height: 47.25px;/*63*/
+    width: 255px;/*340*/
     border-radius: 15.34px;
     border: 0px;
-    padding-left: 7px;
+    padding-left: 5.25px;/*7*/
 }
 #txtTarea{
-    height: 292px;
-    width: 330px;
+    height: 225px;/*292*/
+    width: 247.5px;/*330*/
     border-radius: 15.34px;
     border: 0px;
-    padding-left: 7px;
-    margin-top: 30px;
-    padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 5.25px;/*7*/
+    margin-top: 22.5px;/*30*/
+    padding-top: 11.25px;/*15*/
+    padding-left: 11.25px;
 }
 #foto{
-    width: 340px;
+    width: 255px; /*340*/
   color: white;
   border-radius: 5px;
-  height: 32px;
+  height: 24px;/*32*/
   cursor: pointer;
-  font-size: 18px;
-  padding: 20px 0px;
+  font-size: 13.5px;/*18*/
+  padding: 15px 0px;/*20*/
   text-align: center;
 }
 hr{
     border: 1px solid;
     width: 100%;
     color: #CCCCCC;
-    margin-top: 30px;
+    margin-top: 14px;/*30*/
     /* margin-bottom: 30px; */
 }
 
@@ -261,8 +262,8 @@ hr{
 .lbl-Check {
     display: block;
     position: relative;
-    padding-left: 45px;
-    margin-bottom: 12px;
+    padding-left: 33.75px; /*45*/
+    margin-bottom: 9px;/*12*/
     cursor: pointer;
     color: #FFFFFF;
   }
@@ -278,16 +279,16 @@ hr{
     top: 0;
     left: 0;
     border-radius: 5px;
-    height: 25px;
-    width: 25px;
+    height: 18.75px;/*25*/
+    width: 18.75px;
     background-color: #eee;
   }
   .radiomark {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 18.75px;/*25*/
+    width: 18.75px;
     background-color: #eee;
     border-radius: 50%;
   }
@@ -311,10 +312,10 @@ hr{
   }
 
   .lbl-Check .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
+    left: 6.75px;/*9*/
+    top: 3.75px;/*5*/
+    width: 3.75px;/*5*/
+    height: 7.5px;/*10*/
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
@@ -322,44 +323,44 @@ hr{
     transform: rotate(45deg);
   }
   .lbl-Check .radiomark:after {
-    top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
+    top: 6.75px;/*9*/
+    left: 6.75px;
+    width: 6px;/*8*/
+    height: 6px;
+    border-radius: 50%;
+    background: white;
   }
 
 
 .form-boton{
-    max-width: 954px;
-    height: 106px;
+    max-width: 715.5px;/*954*/ 
+    height: 79.5px;/*106*/
     text-align: center;
     background-color: #00669F;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;/*20*/
     display: flex;
     justify-content: center;
 
 }
 .form-boton button {
-    width: 466px;
-    height: 87px;
+    width: 349.5px;/*466*/
+    height: 60.25px;/*87*/
     background-color: #1CD1B0;
     color: #000000;
-    font-size: 40px;
+    font-size: 30px;/*40*/
     font-weight: bold;
     border-radius: 23.01px;
     border: 0px;
     cursor: pointer;
-    padding: 0px 80px;
+    padding: 0px 60px;/*80*/
     /* display: flex; */
 }
 /* -------------------- footer ----------------- */
 footer {
-    height: 61px;
-    line-height: 61px;
+    height: 48.8px; /*61*/
+    line-height: 48.8px;
     text-align: center;
     color: #FFF9F9;
     background-color: #00669f;

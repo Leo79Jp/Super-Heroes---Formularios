@@ -63,8 +63,8 @@ nav .menu:last-child{
 }
 
 /* ------------------ main --------------------- */
-.main_principal{min-height: calc(100vh - 121px - 45.75px);}
-.main_principal{
+.main_principal, .main_principalForm{min-height: calc(100vh - 121px - 45.75px);}
+.main_principal, .main_principalForm{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +253,7 @@ label[for="heroes"]{
   padding: 14px 0px;/*20*/
   text-align: center;
 }
-hr{
+hr .separador{
     border: 0.5px solid;
     width: 231px;
     color: #CCCCCC;
@@ -357,7 +357,80 @@ hr{
     border: 0px;
     cursor: pointer;
     padding: 0px 56px;/*80*/
+}
+.main_principalForm form{
+    width: 500px;
+}
+.form-registroTitulo{
+    /* max-width: 500px;  */
+    height: 100px;
+    background-color: #00669F;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     /* display: flex; */
+}
+.formTitulo{
+    /* max-width: 500px;  */
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    color: #f3f3f3;
+    font-size: 45px;
+    font-weight: bold;
+    /* display: flex; */
+}
+.form_registroCuerpo{
+    /* max-width: 500px;  */
+    height: 230px;
+    background-color: #00669F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label[for="usuario"],[for="contraseña"]{
+    margin-block: 10px;
+    color: #FFFFFF;
+    width: 320px;
+    font-size: 20px;
+}
+#usuario, #contraseña{
+    height: 30px;
+    border-radius: 15.34px;
+    color: #2d2b2b;
+    width: 320px;
+    font-size: 20px;
+    padding: 10px;
+    border: 0px;
+}
+.form-registroIngresar{
+    /* width: 500px;  */
+    height: 100px;
+    background-color: #00669F;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-registroIngresar a{
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+    line-height: 50px;
+    width: 250px;
+    height: 50px;
+    border-radius: 15.34px;
+    border: 0px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #1CD1B0;
+    cursor: pointer;
+}
+ .linea{
+    border: 0.1px solid #01080c;
+    margin-inline: 10px;
+    opacity: 0.5;
 }
 /* -------------------- footer ----------------- */
 footer {
@@ -372,32 +445,39 @@ footer {
     nav ul{
         display: none;
     }
+    form{
+    margin-inline: 6px;
+    }
     .menu{
         display: block;
     }
     header h1{
         font-size: 30px;
     }
-    .form-boton button {
-        width: 340px;
-    }
-    /* .form_cuerpo{
+    .form_cuerpo{
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-    } */
+    }
     .form_izquierdo{
-        width: 340px;
+        display: flex;
         align-content: center;
+        /* align-content: center; */
     }
     .form_derecho{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-items: start;
-        width: 340px;
-    
+        width: 231px;/*330*/
+
     }
+    .form-boton button {
+        width: 290px;/*466*/
+    }
+    label[for="usuario"],[for="contraseña"]{
+        width: 290px;
+    }
+    #usuario, #contraseña{
+        width: 290px;
+    }
+    
     
     
 }

@@ -18,12 +18,14 @@
         </div>
         <section>
             <nav>
-                <ul>
+                <ul id="ul">
                     <li><a href="#">Contacto</a></li>
+                    <hr class="linea">
                     <li><a href="#">Registrarme</a></li>
+                    <hr class="linea">
                     <li><a href="#" >Ingresar</a></li>
                 </ul>
-                <a class="menu" href="#"><i class="fi fi-br-menu-burger"></i></a>
+                <a class="menu" id="menu"href="#"><i class="fi fi-br-menu-burger"></i></a>
 
             </nav>
         </section>
@@ -33,14 +35,14 @@
             <div class="form-registroTitulo">
                 <div class="formTitulo">Bienvenido</div>
             </div>
-            <hr class="linea">
+            <!-- <hr class="linea"> -->
             <div class="form_registroCuerpo">
                 <label for="usuario">Usuario</label>
                 <input type="text" name="usuario" id="usuario" title="Usuario"placeholder="Usuario" required>
                 <label for="contraseña">Contraseña</label>
                 <input type="password" name="contraseña" id="contraseña" title="contraseña"placeholder="Contraseña" required>
             </div>
-            <hr class="linea">
+            <!-- <hr class="linea"> -->
             <div class="form-registroIngresar">
                 <a href="cartas.html">Ingresar</a>
             </div>
@@ -54,4 +56,15 @@
 
 </body>
 </html>
-
+<script>
+    var elemento = document.getElementById('ul');
+    document.getElementById("menu").addEventListener("click", function() {
+            if (elemento.style.display === 'none') {
+            elemento.style.display = 'flex';
+            } 
+            else {
+                elemento.style.display = 'none';
+            }
+    });
+</script>
+  

@@ -1,9 +1,14 @@
 *{
     margin: 0px;
 }
+
 /* ----------------- header-------------------- */
 body{
     font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .titulo{
     display: flex;
@@ -35,9 +40,18 @@ section>nav{
     background-color: #001D2D;
 }
 nav ul{
-    display: block;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     list-style: none;
     margin: 0px;
+}
+nav a:hover{
+    color: #1CD1B0;
 }
 nav li{
     display: inline;
@@ -428,9 +442,7 @@ label[for="usuario"],[for="contraseña"]{
     cursor: pointer;
 }
  .linea{
-    border: 0.1px solid #01080c;
-    margin-inline: 10px;
-    opacity: 0.5;
+    display: none;
 }
 /* -------------------- footer ----------------- */
 footer {
@@ -444,6 +456,16 @@ footer {
 @media only screen and (max-width: 768px) {
     nav ul{
         display: none;
+        flex-direction: column;
+        
+        background-color: #001D2D;
+        top: 121px;
+        position: fixed;
+        left: 50%;
+        width: 50%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        z-index: 3;
     }
     form{
     margin-inline: 6px;
@@ -476,6 +498,13 @@ footer {
     }
     #usuario, #contraseña{
         width: 290px;
+    }
+    .linea{
+        display: block;
+        width: 100%;
+        border: 0.1px solid #9b9c9d;
+        margin-inline: 10px;
+        opacity: 0.5;
     }
     
     
